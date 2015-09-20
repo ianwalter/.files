@@ -1,4 +1,4 @@
-# Mainly so that programs like git will use vim as the editor instead of vi
+# So that programs like git will use vim as the editor instead of vi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
