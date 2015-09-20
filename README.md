@@ -1,2 +1,2 @@
 # Ian's dotfiles
-My personal 
+My personal system configuration
