@@ -14,9 +14,6 @@ set show-all-if-ambiguous on
 # Show all autocomplete results at once
 set page-completions off
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
