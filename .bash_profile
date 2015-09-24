@@ -3,7 +3,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
