@@ -5,10 +5,9 @@ export EDITOR="$VISUAL"
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
 
-#
-if hash docker-machine 2>/dev/null; then
-  eval "$(docker-machine env default)"
-fi
+export PGDATA=/usr/local/var/postgres
+export POSTGRES_HOST=localhost
+export REDIS_URL_INT=redis://localhost:6379
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
