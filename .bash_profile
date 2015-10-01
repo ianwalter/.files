@@ -3,11 +3,12 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin:/usr/local/opt/elixir/bin
 
 export PGDATA=/usr/local/var/postgres
-export POSTGRES_HOST=localhost
-export REDIS_URL_INT=redis://localhost:6379
+export DB_USER=ian
+export DB_PASS=""
+export DB_HOST=localhost
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
