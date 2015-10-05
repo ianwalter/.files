@@ -6,9 +6,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin:/usr/local/opt/elixir/bin
 
 export PGDATA=/usr/local/var/postgres
-export DB_USER=ian
-export DB_PASS=""
-export DB_HOST=localhost
+export DATABASE_POSTGRESQL_USERNAME=ian
+export DATABASE_POSTGRESQL_PASSWORD=""
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
