@@ -8,6 +8,9 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin:/usr/local/opt/elixi
 export PGDATA=/usr/local/var/postgres
 export DATABASE_POSTGRESQL_USERNAME=ian
 export DATABASE_POSTGRESQL_PASSWORD=""
+export MAILGUN_API_KEY=""
+
+alias elector="sudo boxcars -port=80 -secure config.json"
 
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
