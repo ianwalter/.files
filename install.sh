@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function install {
   git clone git@github.com:ianwalter/$1.git ~/$1
