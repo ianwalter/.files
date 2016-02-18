@@ -1,8 +1,14 @@
 #!/bin/bash
 
 function install {
-  git clone git@github.com:ianwalter/$1.git ~/$1
-  cd ~/$1 && ./install.sh
+  if [ -d ~/$1 ]; then
+    cd ~/$1
+    git pull origin master
+  else
+    git clone git@github.com:ianwalter/$1.git ~/$1
+    cd ~/$1
+  fi
+  ./install.sh
 }
 
 # Install bash configuration.
