@@ -1,4 +1,4 @@
-# (dotfiles)[https://github.com/ianwalter/dotfiles]
+# [dotfiles](https://github.com/ianwalter/dotfiles)
 Ian's system configuration.
 
 ## Modules
