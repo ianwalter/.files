@@ -19,3 +19,8 @@ install dotvimrc
 
 # Install git configuration.
 install dotgitconfig
+
+# Reload the shell so that changes take effect immediately.
+cd ~/dotfiles
+exec $SHELL -l
+
