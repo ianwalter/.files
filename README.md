@@ -2,7 +2,7 @@
 Ian's system configuration.
 
 ## Modules
-* [dotbash](https://github.com/ianwalter/dotbash) - Ian's bash configuration.
+* [dotsh](https://github.com/ianwalter/dotsh) - Ian's shell configurations.
 * [dotvimrc](https://github.com/ianwalter/dotvimrc) - Ian's vim configuration.
 * [dotgitconfig](https://github.com/ianwalter/dotgitconfig) - Ian's git
   configuration.
