@@ -12,7 +12,7 @@ function install {
 }
 
 # Install bash configuration.
-install dotbash
+install dotsh
 
 # Install vim configuration.
 install dotvimrc
@@ -23,4 +23,3 @@ install dotgitconfig
 # Reload the shell so that changes take effect immediately.
 cd ~/dotfiles
 exec $SHELL -l
-
