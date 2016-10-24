@@ -6,6 +6,7 @@ Ian's system configuration.
 * [dotvimrc](https://github.com/ianwalter/dotvimrc) - Ian's vim configuration.
 * [dotgitconfig](https://github.com/ianwalter/dotgitconfig) - Ian's git
   configuration.
+* [dotatom](https://github.com/ianwalter/dotatom) - Ian's Atom configuration.
 
 &nbsp;
 

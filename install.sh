@@ -20,6 +20,11 @@ install dotvimrc
 # Install git configuration.
 install dotgitconfig
 
+# Install atom packages if APM is installed.
+if [ `which apm` ]; then
+  install dotatom
+fi
+
 # Reload the shell so that changes take effect immediately.
 cd ~/dotfiles
 exec $SHELL -l
