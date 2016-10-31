@@ -1,11 +1,16 @@
 #!/bin/bash
 
+repo_url="git@github.com:ianwalter/"
+if [ $DOTFILES_USE_HTTPS -eq "true" ]; then
+  repo_url="https://github.com/ianwalter/"
+fi
+
 function install {
   if [ -d ~/$1 ]; then
     cd ~/$1
     git pull origin master
   else
-    git clone git@github.com:ianwalter/$1.git ~/$1
+    git clone $repo_url/$1.git ~/$1
     cd ~/$1
   fi
   ./install.sh
