@@ -25,6 +25,9 @@ install dotvimrc
 # Install git configuration.
 install dotgitconfig
 
+# Install Slate configuration.
+install dotslate
+
 # Install atom packages if APM is installed.
 if [ `which apm` ]; then
   install dotatom

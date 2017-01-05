@@ -1,5 +1,5 @@
-# [dotfiles](https://github.com/ianwalter/dotfiles)
-Ian's system configuration.
+# dotfiles
+> Ian's system configuration.
 
 ## Modules
 * [dotsh](https://github.com/ianwalter/dotsh) - Ian's shell configurations.
