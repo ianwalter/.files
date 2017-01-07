@@ -1,6 +1,6 @@
 #!/bin/bash
 
-repo_url="git@github.com:ianwalter/"
+repo_url="git@github.com:ianwalter"
 if [ $DOTFILES_USE_HTTPS = "true" ]; then
   repo_url="https://github.com/ianwalter"
 fi
