@@ -33,6 +33,9 @@ if [ `which apm` ]; then
   install dotatom
 fi
 
+# Install Hyper configuration.
+install dothyper
+
 # Reload the shell so that changes take effect immediately.
 cd ~/dotfiles
 exec $SHELL -l
