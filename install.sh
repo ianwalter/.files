@@ -25,8 +25,10 @@ install dotvimrc
 # Install git configuration.
 install dotgitconfig
 
-# Install Slate configuration.
-install dotslate
+# If on MacOS, install Slate configuration.
+if [[ $(uname) == 'Darwin' ]]; then
+  install dotslate
+fi
 
 # Install atom packages if APM is installed.
 if [ `which apm` ]; then
