@@ -35,8 +35,10 @@ if [ `which apm` ]; then
   install dotatom
 fi
 
-# Install Hyper configuration.
-install dothyper
+# If a .hyper.js file exists, install Hyper configuration.
+if [ -a ~/.hyper.js ]; then
+  install dothyper
+fi
 
 # Reload the shell so that changes take effect immediately.
 cd ~/dotfiles
