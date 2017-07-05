@@ -16,8 +16,8 @@ function install {
   ./install.sh
 }
 
-# Install bash configuration.
-install dotsh
+# Install fish configuration.
+install dotfish
 
 # Install vim configuration.
 install dotvimrc
