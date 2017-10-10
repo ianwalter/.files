@@ -7,8 +7,6 @@
 * [dotgitconfig](https://github.com/ianwalter/dotgitconfig) - Ian's git
   configuration.
 * [dotatom](https://github.com/ianwalter/dotatom) - Ian's Atom configuration.
-* [dotslate](https://github.com/ianwalter/dotslate) - Ian's Slate configuration.
-* [dothyper](https://github.com/ianwalter/dothyper) - Ian's Hyper configuration.
 
 &nbsp;
 
