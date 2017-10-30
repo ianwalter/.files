@@ -30,7 +30,7 @@ install dotvimrc
 # Install git configuration.
 install dotgitconfig
 
-# Install atom packages if APM is installed.
+# Install atom configuration if APM (and thus Atom) is installed.
 if [ `which apm` ]; then
   install dotatom
 fi
