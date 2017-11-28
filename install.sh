@@ -25,9 +25,9 @@ install dotvimrc
 # Install git configuration.
 install dotgitconfig
 
-# Install atom packages if APM is installed.
-if [ `which apm` ]; then
-  install dotatom
+# Configure VS Code if installed.
+if [ `which code` ]; then
+  install dotvscode
 fi
 
 # Reload the shell so that changes take effect immediately.
