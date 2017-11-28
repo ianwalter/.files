@@ -16,6 +16,11 @@ function install {
   ./install.sh
 }
 
+# Install Homebrew configuration.
+if [[ $(uname) == 'Darwin' ]]; then
+  install dotbrew
+fi
+
 # Install fish configuration.
 install dotfish
 
