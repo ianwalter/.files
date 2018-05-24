@@ -35,6 +35,9 @@ if [ `which code` ]; then
   install dotvscode
 fi
 
+# Install iTerm2 configuration.
+install dotiterm
+
 # Reload the shell so that changes take effect immediately.
 cd ../dotfiles
 exec $SHELL -l
