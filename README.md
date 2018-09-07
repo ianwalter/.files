@@ -4,7 +4,7 @@
 ## Modules
 * [dotbrew](https://github.com/ianwalter/dotbrew) - Ian's Homebrew
   configuration.
-* [dotfish](https://github.com/ianwalter/dotfish) - Ian's fish configurations.
+* [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration.
 * [dotvimrc](https://github.com/ianwalter/dotvimrc) - Ian's vim configuration.
 * [dotgitconfig](https://github.com/ianwalter/dotgitconfig) - Ian's git
   configuration.

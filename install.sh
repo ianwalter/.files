@@ -21,8 +21,8 @@ if [[ $(uname) == 'Darwin' ]]; then
   install dotbrew
 fi
 
-# Install fish configuration.
-install dotfish
+# Install zsh configuration.
+install dotzsh
 
 # Install vim configuration.
 install dotvimrc
