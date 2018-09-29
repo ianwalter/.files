@@ -16,10 +16,18 @@ function install {
   ./install.sh
 }
 
-# Install Homebrew configuration.
+# Install Homebrew packages.
 if [[ $(uname) == 'Darwin' ]]; then
   install dotbrew
 fi
+
+# Install Aptitude packages.
+if [[ $(uname) == 'Linux' ]]; then
+  install dotapt
+fi
+
+# Install npm global packages.
+install dotnpm
 
 # Install zsh configuration.
 install dotzsh
