@@ -1,7 +1,8 @@
 # dotfiles
-> Ian's system configuration.
+> Ian's system configuration
 
 ## Modules
+
 * [dotbrew](https://github.com/ianwalter/dotbrew) - Ian's Homebrew
   configuration.
 * [dotapt](https://github.com/ianwalter/dotapt) - Ian's Aptitude
@@ -19,4 +20,4 @@
 
 &nbsp;
 
-Created by [Ian Walter](http://iankwalter.com).
+ISC &copy; [Ian Walter](http://iankwalter.com)
