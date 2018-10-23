@@ -10,7 +10,7 @@
 * [dotnpm](https://github.com/ianwalter/dotnpm) - Ian's npm
   configuration.
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration.
-* [dotvimrc](https://github.com/ianwalter/dotvimrc) - Ian's vim configuration.
+* [dotvim](https://github.com/ianwalter/dotvim) - Ian's vim configuration.
 * [dotgitconfig](https://github.com/ianwalter/dotgitconfig) - Ian's git
   configuration.
 * [dotvscode](https://github.com/ianwalter/dotvscode) - Ian's VS Code

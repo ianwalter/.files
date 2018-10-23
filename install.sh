@@ -33,7 +33,7 @@ install dotnpm
 install dotzsh
 
 # Install vim configuration.
-install dotvimrc
+install dotvim
 
 # Install git configuration.
 install dotgitconfig
