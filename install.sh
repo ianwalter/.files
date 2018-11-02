@@ -48,6 +48,11 @@ if [[ $(uname) == 'Darwin' ]]; then
   install dotiterm
 fi
 
+# Install Pantheon configuration.
+if [[ $(uname) == 'Linux' ]]; then
+  install dotpantheon
+fi
+
 # Reload the shell so that changes take effect immediately.
 cd ../dotfiles
 exec $SHELL -l
