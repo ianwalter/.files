@@ -26,11 +26,11 @@ if [[ $(uname) == 'Linux' ]]; then
   install dotapt
 fi
 
-# Install npm global packages.
-install dotnpm
-
 # Install zsh configuration.
 install dotzsh
+
+# Install npm global packages.
+install dotnpm
 
 # Install vim configuration.
 install dotvim
@@ -44,7 +44,9 @@ if [ `which code` ]; then
 fi
 
 # Install iTerm2 configuration.
-install dotiterm
+if [[ $(uname) == 'Darwin' ]]; then
+  install dotiterm
+fi
 
 # Reload the shell so that changes take effect immediately.
 cd ../dotfiles
