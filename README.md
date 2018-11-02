@@ -5,8 +5,8 @@
 
 * [dotbrew](https://github.com/ianwalter/dotbrew) - Ian's Homebrew
   configuration.
-* [dotapt](https://github.com/ianwalter/dotapt) - Ian's Aptitude
-  configuration.
+* [dotapt](https://github.com/ianwalter/dotapt) - Ian's Aptitude and
+  Snapcraft configuration.
 * [dotnpm](https://github.com/ianwalter/dotnpm) - Ian's npm
   configuration.
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration.
