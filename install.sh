@@ -21,7 +21,7 @@ if [[ $(uname) == 'Darwin' ]]; then
   install dotbrew
 fi
 
-# Install Aptitude packages.
+# Install Aptitude and Snapcraft packages.
 if [[ $(uname) == 'Linux' ]]; then
   install dotapt
 fi
