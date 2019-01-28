@@ -38,6 +38,9 @@ install dotvim
 # Install git configuration.
 install dotgitconfig
 
+# Install fonts configuration.
+install dotfonts
+
 # Configure VS Code if installed.
 if [ `which code` ]; then
   install dotvscode

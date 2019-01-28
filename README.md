@@ -8,20 +8,40 @@
 * [dotnpm][dotnpmUrl] - Ian's npm configuration.
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration.
 * [dotvim](https://github.com/ianwalter/dotvim) - Ian's vim configuration.
+* [dotfonts][dotfontsUrl] - Ian's fonts configuration.
 * [dotgitconfig][dotgitconfigUrl] - Ian's git configuration.
 * [dotvscode][dotvscodeUrl] - Ian's [VS Code][vscUrl] configuration.
 * [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration.
 * [dotpantheon][dotpantheonUrl] - Ian's [Pantheon Terminal][pantheonUrl]
   configuration.
 
+## Installation
+
+1. Run [dotinit][dotinitUrl] install:
+   ```console
+   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash
+   ```
+2. Clone dotfiles repo and run installation script:
+   ```console
+   mkdir ~/ianwalter && cd ~/ianwalter
+   git clone git@github.com:ianwalter/dotfiles.git && cd dotfiles
+   ./install.sh
+   ```
+
+## License
+
+Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
+
 &nbsp;
 
-ISC &copy; [Ian Walter](http://iankwalter.com)
+Created by [Ian Walter](https://iankwalter.com)
 
+[dotinitUrl]: https://github.com/ianwalter/dotinit
 [dotbrewUrl]: https://github.com/ianwalter/dotbrew
 [dotaptUrl]: https://github.com/ianwalter/dotapt
 [dotnpmUrl]: https://github.com/ianwalter/dotnpm
 [dotgitconfigUrl]: https://github.com/ianwalter/dotgitconfig
+[dotfontsUrl]: https://github.com/ianwalter/dotfonts
 [dotvscodeUrl]: https://github.com/ianwalter/dotvscode
 [dotitermUrl]: https://github.com/ianwalter/dotiterm
 [dotpantheonUrl]: https://github.com/ianwalter/dotpantheon
@@ -31,3 +51,5 @@ ISC &copy; [Ian Walter](http://iankwalter.com)
 [vscUrl]: https://code.visualstudio.com
 [itermUrl]: https://iterm2.com
 [pantheonUrl]: https://github.com/elementary/terminal
+
+[licenseUrl]: https://github.com/ianwalter/dotfiles/blob/master/LICENSE
