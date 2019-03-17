@@ -1,7 +1,7 @@
 #!/bin/bash
 
 environment=$1
-if [[ environment == '' ]]; then
+if [[ $environment == '' ]]; then
   environment='desktop'
 fi
 
@@ -44,7 +44,7 @@ install dotvim
 install dotgitconfig
 
 # Install fonts configuration.
-if [[ environment == 'desktop' ]]; then
+if [[ $environment == 'desktop' ]]; then
   install dotfonts
 fi
 
@@ -59,7 +59,7 @@ if [[ $(uname) == 'Darwin' ]]; then
 fi
 
 # Install Pantheon configuration.
-if [[ environment == 'desktop' ]]; then
+if [[ $environment == 'desktop' ]]; then
   if [[ $(uname) == 'Linux' ]]; then
     install dotpantheon
   fi

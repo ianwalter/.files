@@ -3,17 +3,19 @@
 
 ## Modules
 
-* [dotbrew][dotbrewUrl] - Ian's [Homebrew][brewUrl] configuration.
-* [dotapt][dotaptUrl] - Ian's Aptitude and [Snapcraft][snapUrl] configuration.
-* [dotnpm][dotnpmUrl] - Ian's npm configuration.
-* [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration.
-* [dotvim](https://github.com/ianwalter/dotvim) - Ian's vim configuration.
-* [dotfonts][dotfontsUrl] - Ian's fonts configuration.
-* [dotgitconfig][dotgitconfigUrl] - Ian's git configuration.
-* [dotvscode][dotvscodeUrl] - Ian's [VS Code][vscUrl] configuration.
-* [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration.
+* [dotinit][dotinitUrl] - Init script for installing Ian's dotfiles system
+  configuration
+* [dotbrew][dotbrewUrl] - Ian's [Homebrew][brewUrl] configuration
+* [dotapt][dotaptUrl] - Ian's Aptitude and [Snapcraft][snapUrl] configuration
+* [dotnpm][dotnpmUrl] - Ian's npm configuration
+* [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration
+* [dotvim](https://github.com/ianwalter/dotvim) - Ian's vim configuration
+* [dotfonts][dotfontsUrl] - Ian's fonts configuration
+* [dotgitconfig][dotgitconfigUrl] - Ian's git configuration
+* [dotvscode][dotvscodeUrl] - Ian's [VS Code][vscUrl] configuration
+* [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration
 * [dotpantheon][dotpantheonUrl] - Ian's [Pantheon Terminal][pantheonUrl]
-  configuration.
+  configuration
 
 ## Installation
 
@@ -21,6 +23,11 @@
    ```console
    curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash
    ```
+   Or for a server:
+  ```console
+   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s server
+   ```
+
 2. Clone dotfiles repo and run installation script:
    ```console
    mkdir ~/ianwalter && cd ~/ianwalter
