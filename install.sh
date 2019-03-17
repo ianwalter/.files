@@ -1,8 +1,13 @@
 #!/bin/bash
 
-repo_url="git@github.com:ianwalter"
-if [[ $DOTFILES_USE_HTTPS == "true" ]]; then
-  repo_url="https://github.com/ianwalter"
+environment=$1
+if [[ environment == '' ]]; then
+  environment='desktop'
+fi
+
+repo_url='git@github.com:ianwalter'
+if [[ $DOTFILES_HTTPS == "true" ]]; then
+  repo_url='https://github.com/ianwalter'
 fi
 
 function install {
@@ -13,7 +18,7 @@ function install {
     git clone $repo_url/$1.git ../$1
     cd ../$1
   fi
-  ./install.sh
+  ./install.sh $environment
 }
 
 # Install Homebrew packages.
@@ -39,10 +44,12 @@ install dotvim
 install dotgitconfig
 
 # Install fonts configuration.
-install dotfonts
+if [[ environment == 'desktop' ]]; then
+  install dotfonts
+fi
 
 # Configure VS Code if installed.
-if [ `which code` ]; then
+if [[ `which code` ]]; then
   install dotvscode
 fi
 
@@ -52,8 +59,10 @@ if [[ $(uname) == 'Darwin' ]]; then
 fi
 
 # Install Pantheon configuration.
-if [[ $(uname) == 'Linux' ]]; then
-  install dotpantheon
+if [[ environment == 'desktop' ]]; then
+  if [[ $(uname) == 'Linux' ]]; then
+    install dotpantheon
+  fi
 fi
 
 # Reload the shell so that changes take effect immediately.
