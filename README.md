@@ -24,7 +24,7 @@
    curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash
    ```
    Or for a server:
-  ```console
+   ```console
    curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s server
    ```
 
