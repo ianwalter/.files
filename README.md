@@ -7,11 +7,13 @@
   configuration
 * [dotbrew][dotbrewUrl] - Ian's [Homebrew][brewUrl] configuration
 * [dotapt][dotaptUrl] - Ian's Aptitude and [Snapcraft][snapUrl] configuration
-* [dotnpm][dotnpmUrl] - Ian's npm configuration
-* [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's zsh configuration
-* [dotvim](https://github.com/ianwalter/dotvim) - Ian's vim configuration
+* [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
+* [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
+  configuration
+* [dotvim](https://github.com/ianwalter/dotvim) - Ian's [vim][vimUrl]
+  configuration
 * [dotfonts][dotfontsUrl] - Ian's fonts configuration
-* [dotgitconfig][dotgitconfigUrl] - Ian's git configuration
+* [dotgitconfig][dotgitconfigUrl] - Ian's [git][gitUrl] configuration
 * [dotvscode][dotvscodeUrl] - Ian's [VS Code][vscUrl] configuration
 * [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration
 * [dotpantheon][dotpantheonUrl] - Ian's [Pantheon Terminal][pantheonUrl]
@@ -55,6 +57,10 @@ Created by [Ian Walter](https://iankwalter.com)
 
 [brewUrl]: https://brew.sh
 [snapUrl]: https://snapcraft.io
+[npmUrl]: https://www.npmjs.com/
+[zshUrl]: https://www.zsh.org/
+[vimUrl]: https://www.vim.org/
+[gitUrl]: https://git-scm.com/
 [vscUrl]: https://code.visualstudio.com
 [itermUrl]: https://iterm2.com
 [pantheonUrl]: https://github.com/elementary/terminal
