@@ -25,9 +25,9 @@
    ```console
    curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash
    ```
-   Or for a server:
+   Or for a server (and email address different than mine):
    ```console
-   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s server
+   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s server <email>
    ```
 
 2. Clone dotfiles repo and run installation script:
