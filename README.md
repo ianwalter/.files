@@ -21,16 +21,14 @@
 
 ## Installation
 
-1. Run [dotinit][dotinitUrl] install:
+1. Run [dotinit][dotinitUrl] install with your email address:
+
    ```console
-   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash
-   ```
-   Or for a server (and email address different than mine):
-   ```console
-   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s server <email>
+   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s <email>
    ```
 
 2. Clone dotfiles repo and run installation script:
+
    ```console
    mkdir ~/ianwalter && cd ~/ianwalter
    git clone git@github.com:ianwalter/dotfiles.git && cd dotfiles
