@@ -18,6 +18,7 @@
 * [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration
 * [dotpantheon][dotpantheonUrl] - Ian's [Pantheon Terminal][pantheonUrl]
   configuration
+* [dotgpg][dotgpgUrl] - Ian's GPG configuration
 
 ## Installation
 
@@ -52,6 +53,7 @@ Created by [Ian Walter](https://iankwalter.com)
 [dotvscodeUrl]: https://github.com/ianwalter/dotvscode
 [dotitermUrl]: https://github.com/ianwalter/dotiterm
 [dotpantheonUrl]: https://github.com/ianwalter/dotpantheon
+[dotgpgUrl]: https://github.com/ianwalter/dotgpg
 
 [brewUrl]: https://brew.sh
 [snapUrl]: https://snapcraft.io

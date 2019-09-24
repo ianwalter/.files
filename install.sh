@@ -40,6 +40,9 @@ install dotnpm
 # Install vim configuration.
 install dotvim
 
+# Install GPG configuration.
+install dotgpg
+
 # Install git configuration.
 install dotgitconfig
 
