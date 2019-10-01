@@ -1,7 +1,8 @@
 #!/bin/bash
 
+platform=$(uname)
 environment=$DISPLAY
-if [[ $environment != '' ]]; then
+if [[ $environment != '' || $platform == 'Darwin' ]]; then
   environment='desktop'
 fi
 
@@ -22,12 +23,12 @@ function install {
 }
 
 # Install Homebrew packages.
-if [[ $(uname) == 'Darwin' ]]; then
+if [[ $platform == 'Darwin' ]]; then
   install dotbrew
 fi
 
 # Install Aptitude and Snapcraft packages.
-if [[ $(uname) == 'Linux' ]]; then
+if [[ $platform == 'Linux' ]]; then
   install dotapt
 fi
 
@@ -57,15 +58,13 @@ if [[ `which code` ]]; then
 fi
 
 # Install iTerm2 configuration.
-if [[ $(uname) == 'Darwin' ]]; then
+if [[ $platform == 'Darwin' ]]; then
   install dotiterm
 fi
 
 # Install Pantheon configuration.
-if [[ $environment == 'desktop' ]]; then
-  if [[ $(uname) == 'Linux' ]]; then
-    install dotpantheon
-  fi
+if [[ $environment == 'desktop' && $platform == 'Linux' ]]; then
+  install dotpantheon
 fi
 
 # Reload the shell so that changes take effect immediately.
