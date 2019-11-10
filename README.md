@@ -10,7 +10,7 @@
 * [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
   configuration
-* [dottmux][dottmuxUrl] - Ian's [tmux][tmuxUrl]
+* [dottmux][dottmuxUrl] - Ian's [tmux][tmuxUrl] configuration
 * [dotvim](https://github.com/ianwalter/dotvim) - Ian's [vim][vimUrl]
   configuration
 * [dotfonts][dotfontsUrl] - Ian's fonts configuration
