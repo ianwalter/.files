@@ -38,6 +38,9 @@ install dotzsh
 # Install npm global packages.
 install dotnpm
 
+# Install tmux configuration.
+install dottmux
+
 # Install vim configuration.
 install dotvim
 

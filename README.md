@@ -10,6 +10,7 @@
 * [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
   configuration
+* [dottmux][dottmuxUrl] - Ian's [tmux][tmuxUrl]
 * [dotvim](https://github.com/ianwalter/dotvim) - Ian's [vim][vimUrl]
   configuration
 * [dotfonts][dotfontsUrl] - Ian's fonts configuration
@@ -48,6 +49,7 @@ Created by [Ian Walter](https://iankwalter.com)
 [dotbrewUrl]: https://github.com/ianwalter/dotbrew
 [dotaptUrl]: https://github.com/ianwalter/dotapt
 [dotnpmUrl]: https://github.com/ianwalter/dotnpm
+[dottmuxUrl]: https://github.com/ianwalter/dottmux
 [dotgitconfigUrl]: https://github.com/ianwalter/dotgitconfig
 [dotfontsUrl]: https://github.com/ianwalter/dotfonts
 [dotvscodeUrl]: https://github.com/ianwalter/dotvscode
