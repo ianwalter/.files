@@ -60,6 +60,7 @@ Created by [Ian Walter](https://iankwalter.com)
 [brewUrl]: https://brew.sh
 [snapUrl]: https://snapcraft.io
 [npmUrl]: https://www.npmjs.com/
+[tmuxUrl]: https://github.com/tmux/tmux
 [zshUrl]: https://www.zsh.org/
 [vimUrl]: https://www.vim.org/
 [gitUrl]: https://git-scm.com/
