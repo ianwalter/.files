@@ -35,7 +35,7 @@
    ```console
    mkdir ~/ianwalter && cd ~/ianwalter
    git clone git@github.com:ianwalter/dotfiles.git
-   cd dotfiles && ./install.sh
+   cd dotfiles && ./install.sh <username>
    ```
 
 ## License

@@ -19,7 +19,7 @@ function install {
     git clone $repo_url/$1.git ../$1
     cd ../$1
   fi
-  ./install.sh $environment
+  ./install.sh $2
 }
 
 # Install Aptitude and Snapcraft packages.
@@ -28,7 +28,7 @@ if [[ $platform == 'Linux' ]]; then
 fi
 
 if [[ $USER == 'root' ]]; then
-  install dotuser
+  install dotuser $1
 fi
 
 # Install Homebrew and Linuxbrew packages.
