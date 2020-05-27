@@ -6,6 +6,7 @@
 * [dotinit][dotinitUrl] - Init script for installing Ian's dotfiles system
   configuration
 * [dotbrew][dotbrewUrl] - Ian's [Homebrew][brewUrl] configuration
+* [dotuser][dotuserUrl] - Script / config to create a Linux user
 * [dotapt][dotaptUrl] - Ian's Aptitude and [Snapcraft][snapUrl] configuration
 * [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
@@ -47,6 +48,7 @@ Created by [Ian Walter](https://iankwalter.com)
 
 [dotinitUrl]: https://github.com/ianwalter/dotinit
 [dotbrewUrl]: https://github.com/ianwalter/dotbrew
+[dotuserUrl]: https://github.com/ianwalter/dotuser
 [dotaptUrl]: https://github.com/ianwalter/dotapt
 [dotnpmUrl]: https://github.com/ianwalter/dotnpm
 [dottmuxUrl]: https://github.com/ianwalter/dottmux

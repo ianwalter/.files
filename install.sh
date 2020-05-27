@@ -22,15 +22,17 @@ function install {
   ./install.sh $environment
 }
 
-# Install Homebrew packages.
-if [[ $platform == 'Darwin' ]]; then
-  install dotbrew
-fi
-
 # Install Aptitude and Snapcraft packages.
 if [[ $platform == 'Linux' ]]; then
   install dotapt
 fi
+
+if [[ $USER == 'root' ]]; then
+  install dotuser
+fi
+
+# Install Homebrew and Linuxbrew packages.
+install dotbrew
 
 # Install zsh configuration.
 install dotzsh
