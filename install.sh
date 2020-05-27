@@ -9,7 +9,7 @@ fi
 
 # Set the username.
 username=$USER
-if [[ $1 == '' ]]; then
+if [[ $1 != '' ]]; then
   username=$1
 else
   if [[ $username == 'root' ]]; then
