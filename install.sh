@@ -56,7 +56,8 @@ if [[ $USER == 'root' ]]; then
   fi
 
   # Switch to the new user.
-  su - $username
+  su - $username -c $ianwalter_dir/dotfiles/install.sh
+  exit
 fi
 
 # Change to the dotfiles directory.
