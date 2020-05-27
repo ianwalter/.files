@@ -33,7 +33,6 @@
 2. Clone dotfiles repo and run installation script:
 
    ```console
-   mkdir ~/ianwalter && cd ~/ianwalter
    git clone git@github.com:ianwalter/dotfiles.git
    cd dotfiles && ./install.sh <username>
    ```
