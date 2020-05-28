@@ -75,7 +75,8 @@ fi
 
 # Install Pantheon configuration.
 if [[ $environment == 'desktop' && $platform == 'Linux' ]]; then
-  install dotpantheon
+  # FIXME: replace with a different terminal emulator.
+  # install dotpantheon
 fi
 
 # Reload the shell so that changes take effect immediately.
