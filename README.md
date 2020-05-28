@@ -6,7 +6,6 @@
 * [dotinit][dotinitUrl] - Init script for installing Ian's dotfiles system
   configuration
 * [dotbrew][dotbrewUrl] - Ian's [Homebrew][brewUrl] configuration
-* [dotuser][dotuserUrl] - Script / config to create a Linux user
 * [dotapt][dotaptUrl] - Ian's Aptitude and [Snapcraft][snapUrl] configuration
 * [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
@@ -27,14 +26,14 @@
 1. Run [dotinit][dotinitUrl] install with your email address:
 
    ```console
-   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s <email>
+   curl https://raw.githubusercontent.com/ianwalter/dotinit/master/install.sh | bash -s <email> <username>
    ```
 
 2. Clone dotfiles repo and run installation script:
 
    ```console
    git clone git@github.com:ianwalter/dotfiles.git
-   cd dotfiles && ./install.sh <username>
+   cd dotfiles && ./install.sh
    ```
 
 ## License
@@ -43,11 +42,10 @@ Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 &nbsp;
 
-Created by [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://ianwalter.dev)
 
 [dotinitUrl]: https://github.com/ianwalter/dotinit
 [dotbrewUrl]: https://github.com/ianwalter/dotbrew
-[dotuserUrl]: https://github.com/ianwalter/dotuser
 [dotaptUrl]: https://github.com/ianwalter/dotapt
 [dotnpmUrl]: https://github.com/ianwalter/dotnpm
 [dottmuxUrl]: https://github.com/ianwalter/dottmux

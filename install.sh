@@ -7,16 +7,6 @@ if [[ $environment != '' || $platform == 'Darwin' ]]; then
   environment='desktop'
 fi
 
-# Set the username.
-username=$USER
-if [[ $1 != '' ]]; then
-  username=$1
-else
-  if [[ $username == 'root' ]]; then
-    username='ian'
-  fi
-fi
-
 function install {
   if [ -d ../$1 ]; then
     cd ../$1
@@ -29,15 +19,7 @@ function install {
 }
 
 # Determine the absolute path of what the ianwalter directory should be.
-ianwalter_dir=/home/$username/ianwalter
-if [[ $platform == 'Darwin' ]]; then
-  ianwalter_dir=$HOME/ianwalter
-fi
-
-# Create a user if executing as root and the ianwalter directory does not exist.
-if [[ $USER == 'root' && ! -d $ianwalter_dir ]]; then
-  install dotuser $username
-fi
+ianwalter_dir=$HOME/ianwalter
 
 if [[ ! -d $ianwalter_dir ]]; then
   # Create the ianwalter directory.
@@ -45,19 +27,6 @@ if [[ ! -d $ianwalter_dir ]]; then
 
   # Move the dotfiles directory to the ianwalter directory.
   cd ..; sudo mv dotfiles $ianwalter_dir
-fi
-
-if [[ $USER == 'root' ]]; then
-  # If the dotuser directory doesn't exist in the ianwalter directory, move it
-  # over and make the ianwalter directory owned by the newly created user.
-  if [[ ! -d $ianwalter_dir/dotuser ]]; then
-    sudo mv dotuser $ianwalter_dir
-    sudo chown -R $username:$username $ianwalter_dir
-  fi
-
-  # Switch to the new user.
-  su - $username -c $ianwalter_dir/dotfiles/install.sh
-  exit
 fi
 
 # Change to the dotfiles directory.
