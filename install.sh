@@ -46,9 +46,6 @@ install dotzsh
 # Install npm global packages.
 install dotnpm
 
-# Install tmux configuration.
-install dottmux
-
 # Install vim configuration.
 install dotvim
 
@@ -73,12 +70,6 @@ fi
 if [[ $platform == 'Darwin' ]]; then
   install dotiterm
 fi
-
-# Install Pantheon configuration.
-# if [[ $environment == 'desktop' && $platform == 'Linux' ]]; then
-  # FIXME: replace with a different terminal emulator.
-  # install dotpantheon
-# fi
 
 # Reload the shell so that changes take effect immediately.
 cd ../dotfiles

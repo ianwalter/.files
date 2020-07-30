@@ -10,15 +10,12 @@
 * [dotnpm][dotnpmUrl] - Ian's [npm][npmUrl] configuration
 * [dotzsh](https://github.com/ianwalter/dotzsh) - Ian's [zsh][zshUrl]
   configuration
-* [dottmux][dottmuxUrl] - Ian's [tmux][tmuxUrl] configuration
 * [dotvim](https://github.com/ianwalter/dotvim) - Ian's [vim][vimUrl]
   configuration
 * [dotfonts][dotfontsUrl] - Ian's fonts configuration
 * [dotgitconfig][dotgitconfigUrl] - Ian's [git][gitUrl] configuration
 * [dotvscode][dotvscodeUrl] - Ian's [VS Code][vscUrl] configuration
 * [dotiterm][dotitermUrl] - Ian's [iTerm2][itermUrl] configuration
-* [dotpantheon][dotpantheonUrl] - Ian's [Pantheon Terminal][pantheonUrl]
-  configuration
 * [dotgpg][dotgpgUrl] - Ian's GPG configuration
 
 ## Installation
@@ -48,23 +45,19 @@ Created by [Ian Walter](https://ianwalter.dev)
 [dotbrewUrl]: https://github.com/ianwalter/dotbrew
 [dotaptUrl]: https://github.com/ianwalter/dotapt
 [dotnpmUrl]: https://github.com/ianwalter/dotnpm
-[dottmuxUrl]: https://github.com/ianwalter/dottmux
 [dotgitconfigUrl]: https://github.com/ianwalter/dotgitconfig
 [dotfontsUrl]: https://github.com/ianwalter/dotfonts
 [dotvscodeUrl]: https://github.com/ianwalter/dotvscode
 [dotitermUrl]: https://github.com/ianwalter/dotiterm
-[dotpantheonUrl]: https://github.com/ianwalter/dotpantheon
 [dotgpgUrl]: https://github.com/ianwalter/dotgpg
 
 [brewUrl]: https://brew.sh
 [snapUrl]: https://snapcraft.io
 [npmUrl]: https://www.npmjs.com/
-[tmuxUrl]: https://github.com/tmux/tmux
 [zshUrl]: https://www.zsh.org/
 [vimUrl]: https://www.vim.org/
 [gitUrl]: https://git-scm.com/
 [vscUrl]: https://code.visualstudio.com
 [itermUrl]: https://iterm2.com
-[pantheonUrl]: https://github.com/elementary/terminal
 
 [licenseUrl]: https://github.com/ianwalter/dotfiles/blob/master/LICENSE
