@@ -64,7 +64,8 @@ if [[ $environment == 'desktop' ]]; then
 fi
 
 # Configure VS Code if installed.
-if [[ `which code` ]]; then
+codeServerDir=$HOME/.local/share/code-server/User
+if [[ `which code` || -d $codeServerDir ]]; then
   install dotvscode
 fi
 
