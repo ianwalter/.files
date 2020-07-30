@@ -74,10 +74,10 @@ if [[ $platform == 'Darwin' ]]; then
 fi
 
 # Install Pantheon configuration.
-if [[ $environment == 'desktop' && $platform == 'Linux' ]]; then
+# if [[ $environment == 'desktop' && $platform == 'Linux' ]]; then
   # FIXME: replace with a different terminal emulator.
   # install dotpantheon
-fi
+# fi
 
 # Reload the shell so that changes take effect immediately.
 cd ../dotfiles
