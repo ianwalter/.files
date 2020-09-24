@@ -1,0 +1,11 @@
+{
+  "name": "dotfiles",
+  // "image": "ianwalter/devcontainer",
+  "image": "ianwalter/pnpm-devcontainer",
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ]
+}
