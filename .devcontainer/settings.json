@@ -5,12 +5,12 @@
   "editor.rulers": [80, 120],
   "editor.renderWhitespace": "all",
   "editor.scrollBeyondLastLine": false,
+  "editor.suggestSelection": "first",
   "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.exclude": {
-    "**/.record": true,
     "**/.git": true,
     "**/.DS_Store": true,
     "**/*.pyc": true
@@ -20,17 +20,10 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.shell.linux": "/usr/bin/zsh",
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-  "eslint.validate": [
-    "javascript",
-    "vue"
-  ],
   "todohighlight.toggleURI": true,
   "presentationMode.zoomLevel": 1,
   "vetur.format.scriptInitialIndent": true,
   "vetur.format.styleInitialIndent": true,
-  "scss.lint.unknownProperties": "ignore",
-  "scss.lint.emptyRules": "ignore",
-  "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "javascript.updateImportsOnFileMove.enabled": "never",
   "workbench.colorTheme": "Kiss",
@@ -42,6 +35,7 @@
     "*.json": "jsonc"
   },
   "git.enableSmartCommit": true,
+  "git.autofetch": false,
   "settingsSync.ignoredExtensions": [
     "octref.vetur",
     "tlent.jest-snapshot-language-support",
