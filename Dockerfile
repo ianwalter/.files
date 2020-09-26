@@ -15,8 +15,32 @@ RUN LATEST_COMPOSE_VERSION=$(curl -sSL "https://api.github.com/repos/docker/comp
   && curl -sSL "https://github.com/docker/compose/releases/download/${LATEST_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
   && chmod +x /usr/local/bin/docker-compose
 
-# Install Homebrew / Linuxbrew.
-RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-RUN eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+# Install development tools.
+RUN apt-get install -y zsh zplug vim jq
 
-RUN brew install bat git jq starship wget zsh
+# Set the current working directory to root's home directory.
+WORKDIR /root
+
+# Set up a directory for global npm packages.
+RUN mkdir ~/.npm-global && npm config set prefix '~/.npm-global'
+
+# Make the .zsh directory where plugins will be installed.
+RUN mkdir .zsh
+
+# Use the typewritten prompt: https://github.com/reobin/typewritten
+RUN git clone https://github.com/reobin/typewritten.git .zsh/typewritten
+
+# Use zsh-completions: https://github.com/zsh-users/zsh-completions
+RUN git clone git://github.com/zsh-users/zsh-completions.git .zsh/zsh-completions
+
+# Use zsh-suggestions: https://github.com/zsh-users/zsh-autosuggestions
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions .zsh/zsh-autosuggestions
+
+# Use zsh-syntax-highlighting: https://github.com/zsh-users/zsh-syntax-highlighting
+RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git .zsh/zsh-syntax-highlighting
+
+# Install n so that you can easily switch Node.js versions.
+RUN npm install -g n
+
+# Copy the files from .devcontainer to the current working directory.
+COPY .devcontainer/ .

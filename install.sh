@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ $CODESPACES != '' ]]; then
+  printf "\n✅ Deferring to devcontainer.\n\n"printf
+  exit
+fi
+
 # Determine if this is being setup for a desktop computer.
 platform=$(uname)
 environment=$DISPLAY
@@ -12,11 +17,7 @@ function install {
     cd ../$1
     git pull origin master
   else
-    repo=git@github.com:ianwalter/$1.git
-    if [[ $CODESPACES != '' ]]; then
-      repo=https://github.com/ianwalter/$1.git
-    fi
-    git clone $repo ../$1
+    git clone git@github.com:ianwalter/$1.git ../$1
     cd ../$1
   fi
   ./install.sh $2
@@ -36,11 +37,9 @@ fi
 # Change to the dotfiles directory.
 cd $ianwalter_dir/dotfiles
 
-if [[ $CODESPACES == '' ]]; then
-  # Install Aptitude and Snapcraft packages.
-  if [[ $platform == 'Linux' ]]; then
-    install dotapt
-  fi
+# Install Aptitude and Snapcraft packages.
+if [[ $platform == 'Linux' ]]; then
+  install dotapt
 fi
 
 # Install Homebrew and Linuxbrew packages.
@@ -49,19 +48,17 @@ install dotbrew
 # Install zsh configuration.
 install dotzsh
 
-if [[ $CODESPACES == '' ]]; then
-  # Install npm global packages.
-  install dotnpm
+# Install npm global packages.
+install dotnpm
 
-  # Install vim configuration.
-  install dotvim
+# Install vim configuration.
+install dotvim
 
-  # Install GPG configuration.
-  install dotgpg
+# Install GPG configuration.
+install dotgpg
 
-  # Install git configuration.
-  install dotgitconfig
-fi
+# Install git configuration.
+install dotgitconfig
 
 # Install fonts configuration.
 if [[ $environment == 'desktop' ]]; then
@@ -69,7 +66,7 @@ if [[ $environment == 'desktop' ]]; then
 fi
 
 # Configure VS Code if installed.
-if [[ `which code` || $CODESPACES != '' ]]; then
+if [[ `which code` ]]; then
   install dotvscode
 fi
 

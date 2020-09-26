@@ -1,7 +1,6 @@
 {
   "name": "dotfiles",
-  // "image": "ianwalter/devcontainer",
-  "image": "ianwalter/pnpm-devcontainer",
+  "image": "ianwalter/devcontainer",
   "extensions": [
     "ms-azuretools.vscode-docker"
   ],
