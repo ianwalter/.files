@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $CODESPACES != '' ]]; then
-  printf "\n✅ Deferring to devcontainer.\n\n"printf
+  printf "\n✅ Deferring to devcontainer.\n\n"
   exit
 fi
 
