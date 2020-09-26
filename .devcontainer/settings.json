@@ -1,6 +1,6 @@
 {
   "editor.tabSize": 2,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.rulers": [80, 120],
   "editor.renderWhitespace": "all",
